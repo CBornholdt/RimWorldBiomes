@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B623963-05F4-4DDC-8A23-584997275567}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RimWorldBiomesCaves</RootNamespace>
+    <AssemblyName>RimWorldBiomesCaves</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assemblies</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RimWorldBiomesCore">
+      <HintPath>..\..\RimWorldBiomesCore\Assemblies\RimWorldBiomesCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\..\usr\local\lib\dotnet\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BeachMaker.cs" />
+    <Compile Include="BiomesCavesMod.cs" />
+    <Compile Include="BiomesCavesSettings.cs" />
+    <Compile Include="BiomeWorker_Cavern.cs" />
+    <Compile Include="Building_Stalagmite.cs" />
+    <Compile Include="GenStep_Cavern.cs" />
+    <Compile Include="GenStep_CavernElevation.cs" />
+    <Compile Include="GenStep_CavernFloor.cs" />
+    <Compile Include="Harmony_BiomePatches.cs" />
+    <Compile Include="Harmony_WildSpawnerPatch.cs" />
+    <Compile Include="Incidents\IncidentWorker_BatSwarm.cs" />
+    <Compile Include="CavernBiomeDef.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Incidents\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
