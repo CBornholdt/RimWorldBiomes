@@ -58,11 +58,7 @@
     <Compile Include="GenStep_CavernFloor.cs" />
     <Compile Include="Harmony_BiomePatches.cs" />
     <Compile Include="Harmony_WildSpawnerPatch.cs" />
-    <Compile Include="Incidents\IncidentWorker_BatSwarm.cs" />
     <Compile Include="CavernBiomeDef.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Incidents\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
