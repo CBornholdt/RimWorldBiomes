@@ -59,6 +59,7 @@
     <Compile Include="Harmony_BiomePatches.cs" />
     <Compile Include="Harmony_WildSpawnerPatch.cs" />
     <Compile Include="CavernBiomeDef.cs" />
+    <Compile Include="Incidents\IncidentWorker_BatSwarm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
