@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RWB.BatSwarmArrived.LetterLabel>Bat Swarm!</RWB.BatSwarmArrived.LetterLabel>
+	<RWB.BatSwarmArrived.LetterText>A swarm of {0} has traveled in from the outskirts of the caverns!</RWB.BatSwarmArrived.LetterText>
+</LanguageData>

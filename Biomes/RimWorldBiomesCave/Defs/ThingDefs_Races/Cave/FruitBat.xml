@@ -89,6 +89,7 @@
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>RWBFruitBat</defName>
         <label>fruit Bat</label>
+        <labelPlural>fruit bats</labelPlural>
         <race>RWB_FruitBat</race>
         <combatPower>25</combatPower>
         <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>

@@ -98,7 +98,8 @@
     
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>RWBVampireBat</defName>
-        <label>vampire Bat</label>
+        <label>vampire bat</label>
+        <labelPlural>vampire bats</labelPlural>
         <race>RWB_VampireBat</race>
         <combatPower>45</combatPower>
         <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>

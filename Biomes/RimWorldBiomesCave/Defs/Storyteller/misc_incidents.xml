@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<IncidentDef>
+		<defName>BatSwarm</defName>
+		<label>batswarm</label>
+		<category>Misc</category>
+    <targetTypes>
+      <li>MapPlayerHome</li>
+    </targetTypes>
+		<workerClass>RimWorldBiomesCaves.IncidentWorker_BatSwarm</workerClass>
+		<baseChance>1.0</baseChance>
+		<minRefireDays>8</minRefireDays>
+		<allowedBiomes>
+			<li>RWBCavern</li>
+		</allowedBiomes>
+	</IncidentDef>
+</Defs>
